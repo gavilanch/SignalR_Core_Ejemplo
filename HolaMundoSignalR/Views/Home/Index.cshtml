@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">&nbsp;<h3>Sala: <span id="titulo-sala">Loading</span></h3></div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            Usuario..........<input type="text" id="userInput" />
+            <br />
+            Mensaje.........<input type="text" id="messageInput" />
+            @*<input type="button" id="connect" value="Conectarse" />*@
+            <input type="button" id="sendButton" value="Enviar Mensaje" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/signalr.js"></script>
+<script src="~/js/chat.js" asp-append-version="true"></script>
